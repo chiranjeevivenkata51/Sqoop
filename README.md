@@ -13,4 +13,7 @@
    Sqoop Job with Incremental :(created and saved the query we can use for multiple times by exec command an djob name)
 [cloudera@quickstart ~]$ sqoop job --create exi -- import --connect jdbc:mysql://localhost/retail_db --username root -P --table sna -m 1 --target-dir /user/cloudera/test --incremental append --check-column id --last-value 0
 [cloudera@quickstart ~]$ sqoop job --exec exi
+[cloudera@quickstart ~]$ sqoop job --list(list all jobs)
+[cloudera@quickstart ~]$ sqoop job --delete ei(delete the job)
+
 
